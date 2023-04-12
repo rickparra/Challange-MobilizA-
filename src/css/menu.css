@@ -109,7 +109,7 @@ header{
   .nav-bar ul{
     display: block;
     width: fit-content;
-    margin: 80px auto 0 auto;
+    margin: 45px auto 0 auto;
     text-align: center;
     transition: 0.5s;
     opacity: 0;
