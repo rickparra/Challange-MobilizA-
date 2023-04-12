@@ -64,7 +64,12 @@ a {
 	font-weight: bold;
 	color: #ffffff;
 }
-
+.content {
+    margin: 0 auto;
+    padding: 40px; /* ajuste o espaçamento interno conforme necessário */
+    border-radius: 5px; /* adicione bordas arredondadas para suavizar a aparência */
+  }
+  
 
 .sec-cards {
     background: linear-gradient(180deg, var(--color-secondary) 0%, var(--color-primary) 100%);
