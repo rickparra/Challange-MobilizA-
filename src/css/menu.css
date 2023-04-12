@@ -34,7 +34,7 @@ header{
 .logo{
   font-size: 28px;
   font-weight: bold;
-  color: var(--color-primary);
+  color: #fefefe;
 }
 
 .hamburguer{
