@@ -1,8 +1,27 @@
 .title{
-    margin: 0 auto;
-    width: 70%;
-    text-align: center;
-    padding-bottom: 30px;
-    font-size: 40px;
-    color: blue;
+    margin: 40px ;
+    width: 60%;
+    padding-bottom: 10px;
+    font-size: 30px;
+    color: white;
 }
+
+.menu-item {
+    display: inline-block;
+    position: relative;
+    padding-left: 40px;
+    line-height: 30px;
+ }
+ 
+ .menu-item-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background-image: url('/src/imagens/casabraca2.jpg');
+    background-position: left;
+    background-repeat: no-repeat;
+    max-width: 30px;
+    background-size: cover;
+ }
