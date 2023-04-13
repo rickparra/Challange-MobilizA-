@@ -1,0 +1,8 @@
+.title{
+    margin: 0 auto;
+    width: 50%;
+    text-align: left;
+    padding-bottom: 10px;
+    font-size: 32px;
+    color: var(--color-secondary);
+  }
