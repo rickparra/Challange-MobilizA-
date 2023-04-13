@@ -16,32 +16,6 @@ a {
 
 
 
-.nav-container {
-	background-color: #00A1FC;
-	width: 100%;
-
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.nav-container ul {
-	width: 90%;
-	list-style: none;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	gap: 5%;
-}
-
-.nav-container a {
-	color: #ffffff;
-	font-size: 18px;
-	font-weight: bold;
-}
-
-
 .sec-tit-projeto {
 	background: rgb(227, 226, 226);	
     background: linear-gradient(180deg, var(--color-primary) 0%, var(--color-secondary) 100%);
