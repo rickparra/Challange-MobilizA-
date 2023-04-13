@@ -25,3 +25,27 @@
     max-width: 30px;
     background-size: cover;
  }
+ .menu-item-icon2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background-image: url('/src/imagens/download-removebg-preview.png');
+    background-position: left;
+    background-repeat: no-repeat;
+    max-width: 30px;
+    background-size: cover;
+ }
+ .menu-item-icon3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background-image: url('/src/imagens/images-removebg-preview.png');
+    background-position: left;
+    background-repeat: no-repeat;
+    max-width: 70px;
+    background-size: cover;
+ }
