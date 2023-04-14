@@ -19,7 +19,7 @@
     left: 0;
     width: 30px;
     height: 30px;
-    background-image: url('../imagens/casabraca2.jpg');
+    background-image: url('/src/imagens/casabraca2.jpg');
     background-position: left;
     background-repeat: no-repeat;
     max-width: 30px;
@@ -31,7 +31,7 @@
     left: 0;
     width: 30px;
     height: 30px;
-    background-image: url('../imagens/download-removebg-preview.png');
+    background-image: url('/src/imagens/download-removebg-preview.png');
     background-position: left;
     background-repeat: no-repeat;
     max-width: 30px;
@@ -43,7 +43,7 @@
     left: 0;
     width: 40px;
     height: 40px;
-    background-image: url('../imagens/images-removebg-preview.png');
+    background-image: url('/src/imagens/images-removebg-preview.png');
     background-position: left;
     background-repeat: no-repeat;
     max-width: 70px;
