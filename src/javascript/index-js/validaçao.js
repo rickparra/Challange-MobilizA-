@@ -1,18 +1,29 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const form = document.querySelector('form'); // selecione o formulário
-    const usernameInput = document.querySelector('input[type="text"]'); // selecione o input de username
-    const passwordInput = document.querySelector('input[type="password"]'); // selecione o input de senha
+    const signInForm = document.querySelector('.sign-in-form');
+    const signUpForm = document.querySelector('.sign-up-form');
   
-    form.addEventListener('submit', function(event) {
-      event.preventDefault(); // evite que o formulário seja enviado
-      const usernameValue = usernameInput.value.trim(); // pegue o valor do input de username
-      const passwordValue = passwordInput.value.trim(); // pegue o valor do input de senha
+    signInForm.addEventListener('submit', function(event) {
+      const username = signInForm.querySelector('input[type="text"]').value;
+      const password = signInForm.querySelector('input[type="password"]').value;
   
-      if (usernameValue === '' || passwordValue === '') { // verifique se os campos estão vazios
-        alert('Por favor, preencha todos os campos!'); // exiba uma mensagem de erro
+      if (!username || !password) {
+        event.preventDefault();
+        alert('Por favor, preencha todos os campos.');
       } else {
-        alert('Formulário enviado com sucesso!'); // exiba uma mensagem de sucesso
-        form.reset(); // limpe o formulário
+        alert('Formulário enviado com sucesso!');
+      }
+    });
+  
+    signUpForm.addEventListener('submit', function(event) {
+      const username = signUpForm.querySelector('input[type="text"]').value;
+      const email = signUpForm.querySelector('input[type="email"]').value;
+      const password = signUpForm.querySelector('input[type="password"]').value;
+  
+      if (!username || !email || !password) {
+        event.preventDefault();
+        alert('Por favor, preencha todos os campos.');
+      } else {
+        alert('Formulário enviado com sucesso!');
       }
     });
   });
