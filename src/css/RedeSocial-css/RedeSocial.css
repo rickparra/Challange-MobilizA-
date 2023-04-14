@@ -31,7 +31,7 @@
     left: 0;
     width: 30px;
     height: 30px;
-    background-image: url('/src/imagens/download-removebg-preview.png');
+    background-image: url('../imagens/download-removebg-preview.png');
     background-position: left;
     background-repeat: no-repeat;
     max-width: 30px;
@@ -43,7 +43,7 @@
     left: 0;
     width: 40px;
     height: 40px;
-    background-image: url('/src/imagens/images-removebg-preview.png');
+    background-image: url('../imagens/images-removebg-preview.png');
     background-position: left;
     background-repeat: no-repeat;
     max-width: 70px;
@@ -114,7 +114,7 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-image: url('/src/imagens/Alberto.png');
+  background-image: url('../imagens/Alberto.png');
   background-size: cover;
   margin-right: 10px;
 }
