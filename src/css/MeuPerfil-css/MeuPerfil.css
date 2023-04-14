@@ -1,0 +1,87 @@
+:root{
+    --color-secondary: #2A9D8F;
+    --color-primary: #264653;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Estilo para a div da capa */
+.capa {
+    height: 200px;
+    background-image: url(../../imagens/meu-perfil/capa.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Estilo para a div do perfil */
+  .perfil {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    background: #000;
+  }
+
+  .user-personal{
+    width: 30%;
+  }
+  
+  /* Estilo para a div do avatar */
+  .avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-image: url(../../imagens/meu-perfil/foto-gabriel.jpeg);
+    background-size: cover;
+    margin-top: -75px;
+    margin-bottom: 20px;
+    border: 5px solid #fff;
+  }
+  .perfil-content{
+    display: flex;
+    flex-direction: column;
+  }
+  /* Estilo para o nome */
+  .nome {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .user{
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .user-sec-content{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 70%;
+  }
+
+  .edit-perfil {
+    background-color: var(--color-secondary);
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .edit-perfil:hover {
+    cursor: pointer;
+  }
+
+  .button-edit {
+    margin-top: 8px;
+  }
