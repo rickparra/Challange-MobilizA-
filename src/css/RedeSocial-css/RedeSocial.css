@@ -98,4 +98,21 @@
  }
  
  
- 
+ .text-box {
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: #fff;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-image: url('/src/imagens/Alberto.png');
+  background-size: cover;
+  margin-right: 10px;
+}
