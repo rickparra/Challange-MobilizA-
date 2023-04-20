@@ -70,12 +70,13 @@ header{
 footer {
   background-color: #20343b;
   padding: 50px 0;
-  text-align: center; /* adicionado */
+  text-align: center;
+  margin-top: 50px;
 }
 
 .container-footer {
-  display: inline-block; /* adicionado */
-  text-align: left; /* adicionado */
+  display: inline-block; 
+  text-align: left;
 }
 
 .container-footer h4 {
