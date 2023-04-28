@@ -1,6 +1,7 @@
 :root{
     --color-secondary: #2A9D8F;
     --color-primary: #264653;
+    --text-color: #fefefe;
 }
 
 body{
@@ -21,8 +22,8 @@ body{
   }
   .font {
     font-size: 16px;
-    font-family: Helvetica, sans-serif;
-    color: white;
+    font-family: 'Poppins', sans-serif;  box-sizing: border-box;
+    color: var(--text-color);
   }
   .form {
     text-align: center; 
@@ -112,6 +113,7 @@ body{
   :-ms-input-placeholder {  
      color: white;  
   }
+  
   
   @-webkit-keyframes bounce{
     0%{

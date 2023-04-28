@@ -68,11 +68,15 @@ header{
 }
 /* Footer */
 footer {
-  background-color: #20343b;
-  padding: 50px 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--color-primary);
+  color: #fff;
+  padding: 20px;
   text-align: center;
-  margin-top: 50px;
 }
+
 
 .container-footer {
   display: inline-block; 
