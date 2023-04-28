@@ -8,6 +8,9 @@
 body {
 	margin: 0;
 	padding: 0;
+	background-color: #181818;
+	font-family: 'Poppins', sans-serif;  box-sizing: border-box;
+
 }
 
 a {
@@ -17,9 +20,39 @@ a {
 .content{
 	margin: 20px;
 	padding: 20px;
-
+	display: flex;
+	flex-direction: column;
 }
 
+.content-about-us{
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.about-us{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 70%;
+	padding: 20px;
+}
+
+.img-about-us{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 30%;
+}
+
+.img-about-us img{
+	width: 100px;
+	height: 100px;
+}
+
+.titulo{
+	font-size: 30px;
+}
 
 .container {
 	max-width: 800px;
@@ -49,7 +82,7 @@ a {
 
 .sec-tit-projeto {
 	background: rgb(227, 226, 226);	
-    background: linear-gradient(180deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+    background-color: var(--color-secondary);
 
 	height: 15vh;
 }
