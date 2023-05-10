@@ -46,7 +46,8 @@ body {
 }
 
 .tit-about{
-    margin-bottom: 30px;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
     font-size: 30px;
     font-weight: 400;
 }
@@ -55,7 +56,6 @@ body {
     font-size: 13px;
     line-height: 30px;
     text-align: justify;
-    margin-bottom: 10px;
 }
 
 .space{
@@ -86,12 +86,6 @@ body {
     margin-bottom: 10px;
 }
 
-.skills{
-    display: flex;
-    justify-content: space-between;
-    font-weight: 700;
-    font-size: 13px;
-}
 
 @media screen and (max-width:1200px){
     .inner-container{
