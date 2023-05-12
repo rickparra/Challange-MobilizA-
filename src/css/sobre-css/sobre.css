@@ -5,7 +5,9 @@
 	--sec-color-text: #131313;
 
 
-  }
+}
+
+
 
 body {
 	margin: 0;
@@ -31,8 +33,6 @@ body {
   max-width: 800px;
   margin: 0 auto;
 }
-
-
 
 .about-section{
     background: url(../../imagens/sobre/fiap.png) no-repeat left;
@@ -273,4 +273,8 @@ padding-bottom: 2rem;
   .wrapper .carousel {
     grid-auto-columns: 100%;
   }
+}
+
+.about-section, .about-section2, .about-section3, .content-card{
+  visibility: hidden;
 }

@@ -71,3 +71,24 @@ document.addEventListener("mouseup", dragStop);
 carousel.addEventListener("scroll", infiniteScroll);
 wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
 wrapper.addEventListener("mouseleave", autoPlay);
+
+window.sr = ScrollReveal({reset: true});
+sr.reveal('.about-section', {
+    duration: 2000,
+    rotate:{x: 0, y:40, z:0}
+})
+
+sr.reveal('.about-section2', {
+    duration: 2000,
+    rotate:{x: 0, y:40, z:0}
+})
+
+sr.reveal('.about-section3', {
+    duration: 2000,
+    rotate:{x: 0, y:40, z:0}
+})
+
+sr.reveal('.content-card', {
+    duration: 2000,
+    rotate:{x: 0, y:40, z:0}
+})
