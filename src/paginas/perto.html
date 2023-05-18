@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre</title>
 
-    <script src="../javascript/menu.js" defer></script>
-
-    <link rel="stylesheet" href="../css/menu.css">
-
-    <link rel="stylesheet" href="../css/main.css">
-
-    <link rel="stylesheet" href="../css/perto-css/perto.css">
-
-    <script src="../javascript/perto-js/perto.js" defer></script>
-
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-
-
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sobre</title>
+      
+        <script src="../javascript/menu.js" defer></script>
+      
+        <link rel="stylesheet" href="../css/menu.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/perto-css/perto.css">
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+      
+        <script src="../javascript/perto-js/perto.js" defer></script>
+    </head>
+      
+      
 <body>
     
 <header>
@@ -52,51 +51,50 @@
 </header>
 
 <main>
-
-    <div class="content">
-
-        <div class="map">
-
-            <div id="mapContainer"></div>
-
-        </div>
-
-        <div class="denuncias">
-            <div class="form-denuncia">
-                <form action="/submit" method="post">
-                    <label for="name">Nome:</label><br>
-                    <input type="text" id="name" name="name"><br>
-                    <label for="email">Email:</label><br>
-                    <input type="email" id="email" name="email"><br>
-                    <label for="report">Denúncia:</label><br>
-                    <textarea id="report" name="report"></textarea><br>
-                    <input type="submit" value="Enviar">
-                  </form>
-                  
-            </div>
-            <div class="denuncias-feitas">
-                <h2>Denúncias Feitas</h2>
-                <ul>
-                  <li>
-                    <h3>Denúncia #1</h3>
-                    <p><strong>Nome:</strong> João Silva</p>
-                    <p><strong>Email:</strong> joao.silva@email.com</p>
-                    <p><strong>Denúncia:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nulla euismod luctus fermentum, velit justo tincidunt nulla, vel aliquam velit velit vel justo.</p>
-                  </li>
-                  <li>
-                    <h3>Denúncia #2</h3>
-                    <p><strong>Nome:</strong> Maria Santos</p>
-                    <p><strong>Email:</strong> maria.santos@email.com</p>
-                    <p><strong>Denúncia:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nulla euismod luctus fermentum, velit justo tincidunt nulla, vel aliquam velit velit vel justo.</p>
-                  </li>
-                </ul>
-              </div>
-              
-        </div>
-
+    <h1>Ao seu Redor</h1>
+  
+    <div class="container">
+      <div class="section-left">
+        <h2>Localização Atual</h2>
+        <div id="map"></div>
+      </div>
+  
+      <div class="section-right">
+        <h2>Denúncias Próximas</h2>
+        <ul id="denuncias-list">
+          <!-- Aqui serão inseridas as denúncias dinamicamente -->
+        </ul>
+      </div>
     </div>
+  
+    <div class="section-bottom">
+      <h2>Formulário de Denúncia</h2>
+      <form id="formulario">
+        <label for="titulo">Título:</label>
+        <input type="text" id="titulo" required>
+      
+        <label for="descricao">Descrição:</label>
+        <textarea id="descricao" required></textarea>
+      
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" required>
+      
+        <button type="submit">Enviar Denúncia</button>
+      </form>
+      
+      
+    </div>
+  
+    <div id="popup-overlay"></div>
+    <div id="popup-container">
+      <h2 id="popup-title"></h2>
+      <p id="popup-description"></p>
+      <button id="popup-close">Fechar</button>
+    </div>
+  </main>
+  
+ 
 
-</main>
 
 </body>
 </html>
