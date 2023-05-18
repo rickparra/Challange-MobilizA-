@@ -3,6 +3,10 @@
     --color-primary: #264653;
 }
 
+html {
+  overflow-y: scroll;
+}
+
 
 * {
   margin: 0;

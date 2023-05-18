@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre</title>
+
+    <script src="../javascript/menu.js" defer></script>
+
+    <link rel="stylesheet" href="../css/menu.css">
+
+    <link rel="stylesheet" href="../css/main.css">
+
+    <link rel="stylesheet" href="../css/perto-css/perto.css">
+
+    <script src="../javascript/perto-js/perto.js" defer></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+
+</head>
+<body>
+    
+<header>
+    <div class="logo">MobilizAí</div>
+    <div class="hamburguer">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <nav class="nav-bar">
+        <ul>
+            <li>
+                <a href="../index.html">Home</a>
+            </li>
+            <li>
+                <a href="sobre.html">Sobre Nós</a>
+            </li>
+            <li>
+                <a href="contato.html">Contato</a>
+            </li>
+            <li>
+				<a href="perto.html" class="active">Ao redor</a>
+			</li>
+			<li>
+				<a href="MeuPerfil.html">Meu Perfil</a>
+			</li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <div class="content">
+
+        <div class="map">
+
+            <div id="mapContainer"></div>
+
+        </div>
+
+        <div class="denuncias">
+            <div class="form-denuncia">
+                <form action="/submit" method="post">
+                    <label for="name">Nome:</label><br>
+                    <input type="text" id="name" name="name"><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email"><br>
+                    <label for="report">Denúncia:</label><br>
+                    <textarea id="report" name="report"></textarea><br>
+                    <input type="submit" value="Enviar">
+                  </form>
+                  
+            </div>
+            <div class="denuncias-feitas">
+                <h2>Denúncias Feitas</h2>
+                <ul>
+                  <li>
+                    <h3>Denúncia #1</h3>
+                    <p><strong>Nome:</strong> João Silva</p>
+                    <p><strong>Email:</strong> joao.silva@email.com</p>
+                    <p><strong>Denúncia:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nulla euismod luctus fermentum, velit justo tincidunt nulla, vel aliquam velit velit vel justo.</p>
+                  </li>
+                  <li>
+                    <h3>Denúncia #2</h3>
+                    <p><strong>Nome:</strong> Maria Santos</p>
+                    <p><strong>Email:</strong> maria.santos@email.com</p>
+                    <p><strong>Denúncia:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nulla euismod luctus fermentum, velit justo tincidunt nulla, vel aliquam velit velit vel justo.</p>
+                  </li>
+                </ul>
+              </div>
+              
+        </div>
+
+    </div>
+
+</main>
+
+</body>
+</html>
