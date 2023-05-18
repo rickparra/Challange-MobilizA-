@@ -1,23 +1,18 @@
-const form = document.querySelector('.form');
+var faq = document.getElementsByClassName("faq-page");
+var i;
 
-form.addEventListener('submit', function(event) {
-  event.preventDefault();
+for (i = 0; i < faq.length; i++) {
+    faq[i].addEventListener("click", function () {
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("show");
 
-  const name = form.querySelector('.name').value;
-  const email = form.querySelector('.email').value;
-  const message = form.querySelector('.message').value;
-
-  if (!name || !email || !message) {
-    alert('Por favor, preencha todos os campos.');
-    return;
-  }
-
-  // Aqui você pode inserir o código para enviar o formulário
-  // Após o envio, exiba uma mensagem de confirmação ao usuário
-  alert('O formulário foi enviado com sucesso!');
-  
-  // Limpa os campos do formulário após o envio
-  form.querySelector('.name').value = '';
-  form.querySelector('.email').value = '';
-  form.querySelector('.message').value = '';
-});
+        /* Toggle between hiding and showing the active panel */
+        var body = this.nextElementSibling;
+        if (body.style.display === "block") {
+            body.style.display = "none";
+        } else {
+            body.style.display = "block";
+        }
+    });
+}

@@ -1,113 +1,73 @@
-:root{
-    --color-secondary: #2A9D8F;
-    --color-primary: #264653;
-    --text-color: #fefefe;
+:root {
+  --color-secondary: #2A9D8F;
+  --color-primary: #264653;
+  --text-color: #fefefe;
 }
 
-body{
-    overflow-y: scroll;
-  }
-  .title{
-    margin: 0 auto;
-    width: 50%;
-    text-align: center;
-    padding-bottom: 10px;
-    font-size: 32px;
-    color: var(--color-secondary);
-  }
-  .wrapper {
-    width: 50%;
-    height: 50%;
-    margin: 5% auto 0 auto; 
-  }
-  .font {
-    font-size: 16px;
-    font-family: 'Poppins', sans-serif;  box-sizing: border-box;
-    color: var(--text-color);
-  }
-  .form {
-    text-align: center; 
-    
-  }
-  .shadow{
-    box-shadow: 0px 0px 20px 5px #AAA;
-    opacity: 0.5;
-    border-radius: 100px;
-    width: 45%; 
-    margin: 40px auto 0 auto;
-    padding: 0 10px;  
-  }
-  .field-in {
-    display: block;
-    margin: 10px auto;
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    width: 50%;
-    -webkit-transition: all 0.5s ease 0s;
-    -moz-transition: all 0.5s ease 0s;
-    transition: all 0.5s ease 0s;
-  }
-  .name {
-    background-color: var(--color-primary);  
-    border-bottom: 5px solid var(--color-secondary);
-  }
-  .name:hover{
-    background-color: var(--color-secondary);
-    border-bottom: 5px solid var(--color-primary);
-  }
-  .name:focus, .email:focus, .message:focus{
-    outline: none;
-    padding:15px;
-  }
-  .email {
-    background-color: var(--color-primary);  
-    border-bottom: 5px solid var(--color-secondary);
-  }
-  .email:hover{
-    background-color: var(--color-secondary);
-    border-bottom: 5px solid var(--color-primary);
-  }
-  .message {   
-    background-color: var(--color-primary);
-    border-bottom: 5px solid var(--color-secondary);
-    height: 50px;
-  }
-  .message:hover{
-    background-color: var(--color-secondary);
-    border-bottom: 5px solid var(--color-primary);
-  }
-  .submit{
-    border-radius:5px;
-    padding:10px;
-    background-color: var(--color-secondary);  
-    border: none;
-    border-bottom: 5px solid var(--color-primary);  
-    -webkit-transition: all 0.5s ease 0s;
-    -moz-transition: all 0.5s ease 0s;
-    transition: all 0.5s ease 0s;
-  }
-  .submit:hover{
-    -webkit-transform: translate(0, 4px);
-    border-bottom: 2px solid var(--color-secondary);  
-    box-shadow: inset 0px 0px 10px 10px var(--color-primary);
-    cursor: pointer;
-  }
-  ::-webkit-input-placeholder {
-     color: white;
-  }
-  
-  :-moz-placeholder { 
-     color: white;
-  }
-  
-  ::-moz-placeholder { 
-     color: white; 
-  }
-  
-  :-ms-input-placeholder {  
-     color: white;  
-  }
-  
-  
-  
+body {
+  overflow-y: scroll;
+}
+
+.faq-heading {
+  border-bottom: #777;
+  padding: 20px 60px;
+}
+
+.faq-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hr-line {
+  width: 60%;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+.faq-page {
+  /* background-color: #eee; */
+  color: #444;
+  cursor: pointer;
+  padding: 30px 20px;
+  width: 60%;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  margin: auto;
+}
+
+.faq-body {
+  margin: auto;
+  /* text-align: center; */
+  width: 50%;
+  padding: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.show,
+.faq-page:hover {
+  background-color: #1F1F1F;
+}
+
+.faq-body {
+  padding: 0 18px;
+  background-color: none;
+  display: none;
+  overflow: hidden;
+}
+
+.faq-page:after {
+  content: '\02795';
+  /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.show:after {
+  content: "\2796";
+  /* Unicode character for "minus" sign (-) */
+}
